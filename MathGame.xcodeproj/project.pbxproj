@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		05BC36201FA8E3720078BCD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BC361F1FA8E3720078BCD9 /* main.m */; };
 		05BC36281FA8ED8A0078BCD9 /* AdditionalQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BC36271FA8ED8A0078BCD9 /* AdditionalQuestion.m */; };
+		05BC362B1FA8FBB60078BCD9 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BC362A1FA8FBB60078BCD9 /* InputHandler.m */; };
+		05BC362E1FA9085E0078BCD9 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BC362D1FA9085E0078BCD9 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		05BC361F1FA8E3720078BCD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05BC36261FA8ED8A0078BCD9 /* AdditionalQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionalQuestion.h; sourceTree = "<group>"; };
 		05BC36271FA8ED8A0078BCD9 /* AdditionalQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionalQuestion.m; sourceTree = "<group>"; };
+		05BC36291FA8FBB60078BCD9 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		05BC362A1FA8FBB60078BCD9 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		05BC362C1FA9085E0078BCD9 /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		05BC362D1FA9085E0078BCD9 /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				05BC361F1FA8E3720078BCD9 /* main.m */,
+				05BC362C1FA9085E0078BCD9 /* ScoreKeeper.h */,
+				05BC362D1FA9085E0078BCD9 /* ScoreKeeper.m */,
 				05BC36261FA8ED8A0078BCD9 /* AdditionalQuestion.h */,
 				05BC36271FA8ED8A0078BCD9 /* AdditionalQuestion.m */,
+				05BC36291FA8FBB60078BCD9 /* InputHandler.h */,
+				05BC362A1FA8FBB60078BCD9 /* InputHandler.m */,
 			);
 			path = MathGame;
 			sourceTree = "<group>";
@@ -124,7 +134,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BC362E1FA9085E0078BCD9 /* ScoreKeeper.m in Sources */,
 				05BC36281FA8ED8A0078BCD9 /* AdditionalQuestion.m in Sources */,
+				05BC362B1FA8FBB60078BCD9 /* InputHandler.m in Sources */,
 				05BC36201FA8E3720078BCD9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
