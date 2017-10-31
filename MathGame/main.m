@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "AdditionalQuestion.h"
 #import "InputHandler.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     
     BOOL run = YES;
     
     InputHandler *inputHandler = [[InputHandler alloc]init];
+    ScoreKeeper *scoreKeeper = [[ScoreKeeper alloc]init];
 
     
     while (run == YES) {
@@ -32,13 +34,15 @@ int main(int argc, const char * argv[]) {
         
         if (resultInt == question1.answer) {
             NSLog(@"Right!");
+            scoreKeeper.rightCount += 1;
         } else if ([userAnswer  isEqual: @"quit"]) {
             run = NO;
         } else {
             NSLog(@"Wrong!");
+            scoreKeeper.wrongCount +=1;
         }
         
-        
+        NSLog(@"You got %li right, %li wrong.",scoreKeeper.rightCount, scoreKeeper.wrongCount);
     }
     
     return 0;

@@ -10,4 +10,9 @@
 
 @interface ScoreKeeper : NSObject
 
+@property  (nonatomic) NSInteger rightCount;
+@property (nonatomic) NSInteger wrongCount;
+
+
+
 @end
